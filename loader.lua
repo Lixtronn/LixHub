@@ -9,11 +9,21 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "th58rnye56mrcaw278gz"
+_G.Key = "L"
 _G.KeyInput = "string"
 
 function MakeScript()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/demonslayer.lua"))()
+    if game.PlaceId == 6490016198 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/demonslayer.lua"))()
+        OrionLib:Destroy()
+    else
+        OrionLib:MakeNotification({
+            Name = "Game Not Supported!",
+            Content = ":/",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })    
+    end    
 end
 
 function CorrectKeyNotification()
@@ -61,6 +71,8 @@ Tab:AddButton({
         end
   	end    
 })
+
+OrionLib:Init()
 
 
 
