@@ -13,7 +13,7 @@ _G.Key = "th58rnye56mrcaw278gz"
 _G.KeyInput = "string"
 
 function MakeScript()
-    local Window = OrionLib:MakeWindow({Name = "Lix Software | Game", HidePremium = false, SaveConfig = false, IntroEnabled = true, IntroText = "LixSoftware"})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/demonslayer.lua"))()
 end
 
 function CorrectKeyNotification()
