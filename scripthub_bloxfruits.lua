@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Lix Hub | Script Hub Bloxfruit", HidePremium = false, IntroEnabled = true, IntroText = "Lix Hub"})
 
---Variabels
+--Variables
 local player = game.Players.LocalPlayer
 
 local Tab = Window:MakeTab({
@@ -11,37 +11,33 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+--[[scripts
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Natthawat69/EvilHub-FREE/main/Script.lua"))()
+
+--]]
+
 Tab:AddButton({
 	Name = "Vellerius",
 	Callback = function()
-    if game.PlaceId == 2753915549 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Bloxfruit.lua", true))()
-	else
-		OrionLib:MakeNotification({
-            Name = "Game Not Supported!",
-            Content = ":/",
-            Image = "rbxassetid://4483345998",
-            Time = 5
-        }) 	
-   end
 end    
 })
 
 Tab:AddButton({
 	Name = "ThunderZ",
 	Callback = function()
-    if game.PlaceId == 2753915549 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script"))()
-	else
-		OrionLib:MakeNotification({
-            Name = "Game Not Supported!",
-            Content = ":/",
-            Image = "rbxassetid://4483345998",
-            Time = 5
-        }) 	
-   end
 end    
 })
+
+Tab:AddButton({
+	Name = "Evill Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Natthawat69/EvilHub-FREE/main/Script.lua"))()
+end    
+})
+
+
 
 
 local Tab = Window:MakeTab({
