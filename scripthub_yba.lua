@@ -14,32 +14,42 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "LuaRepo v2",
 	Callback = function()
-    if game.PlaceId == 2809202155 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v2.lua"))()
-	else
-		OrionLib:MakeNotification({
-            Name = "Game Not Supported!",
-            Content = ":/",
-            Image = "rbxassetid://4483345998",
-            Time = 5
-        }) 	
-   end
 end    
 })
 
 Tab:AddButton({
 	Name = "LuaRepo v3",
 	Callback = function()
-    if game.PlaceId == 2809202155 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v3.lua"))()
-	else
-		OrionLib:MakeNotification({
-            Name = "Game Not Supported!",
-            Content = ":/",
-            Image = "rbxassetid://4483345998",
-            Time = 5
-        }) 	
-   end
+end    
+})
+
+Tab:AddButton({
+	Name = "YBA sucks ass",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))() 
+end    
+})
+
+Tab:AddButton({
+	Name = "Nex Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CopyReal/NexHub/main/NexHubLoader"))()
+end    
+})
+
+Tab:AddButton({
+	Name = "Historia Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/Histyhubb"))()
+end    
+})
+
+Tab:AddButton({
+	Name = "yba cus yes",
+	Callback = function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/SupBabe/Hentai/main/YBA.lua")()
 end    
 })
 
