@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Mewisous Hub | A One Piece Game", HidePremium = false, IntroEnabled = true, IntroText = "Lix Hub"})
+local Window = OrionLib:MakeWindow({Name = "Lix Hub | Script Hub A One Piece Game", HidePremium = false, IntroEnabled = true, IntroText = "Lix Hub"})
 
 --Variables
 local player = game.Players.LocalPlayer
@@ -18,6 +18,33 @@ Tab:AddButton({
 
 end    
 })
+
+Tab:AddButton({
+	Name = "A one piece game",
+	Callback = function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/loader_1038"))()
+
+end    
+})
+
+Tab:AddButton({
+	Name = "X hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/XHub.lua"))()
+
+end    
+})
+
+Tab:AddButton({
+	Name = "6 foot hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://www.6footscripts.com/Scripts/6FootHub/Hub.lua'))()
+
+end    
+})
+
+
+
 
 
 local Tab = Window:MakeTab({
