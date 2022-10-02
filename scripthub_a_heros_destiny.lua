@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Lix Hub | Script Hub A Hero's Destiny", HidePremium = false, IntroEnabled = true, IntroText = "Lix Hub"})
+local Window = OrionLib:MakeWindow({Name = "Mewisous Hub | A Hero's Destiny", HidePremium = false, IntroEnabled = true, IntroText = "Lix Hub"})
 
 --Variables
 local player = game.Players.LocalPlayer
