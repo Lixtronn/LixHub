@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Lix Software | Script Hub", HidePremium = false, SaveConfig = false, IntroEnabled = false})
+local Window = OrionLib:MakeWindow({Name = "Mewisous Hub | Script Hub", HidePremium = false, SaveConfig = false, IntroEnabled = false})
 
 OrionLib:MakeNotification({
 	Name = "Logged In!",
