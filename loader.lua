@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "knk6awep0z"
+_G.Key = "1" --knk6awep0z
 _G.KeyInput = "string"
 
 function MakeScript()
@@ -17,23 +17,23 @@ function MakeScript()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/demonslayer.lua"))()
         OrionLib:Destroy()
 
-        if game.PlaceId == 2753915549 then -- bloxfruits
+    elseif game.PlaceId == 7449423635 --[[3rd sea--]] or 2753915549 --[[2nd sea]] then -- bloxfruits
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/scripthub_bloxfruits.lua"))()
             OrionLib:Destroy() 
 
-            if game.PlaceId == 2809202155 then -- YBA
+    elseif game.PlaceId == 2809202155 then -- YBA
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/scripthub_yba.lua"))()
                 OrionLib:Destroy() 
 
-                if game.PlaceId == 8396586868 then -- one piece game
+            elseif game.PlaceId == 8396586868 then -- one piece game
                     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/scripthub_a_one_piece_game.lua"))()
                     OrionLib:Destroy() 
 
-                    if game.PlaceId == 6461766546 then -- a hero destiny
+                elseif game.PlaceId == 6461766546 then -- a hero destiny
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/scripthub_a_heros_destiny.lua"))()
                         OrionLib:Destroy()
 
-                        if game.PlaceId == 5130598377 then -- aut
+                    elseif game.PlaceId == 5130598377 then -- aut
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixtronn/Scripts/main/scripthub_aut.lua"))()
                             OrionLib:Destroy()
                         
@@ -46,11 +46,6 @@ function MakeScript()
         })
     end
     end
-    end
-    end   
-    end
-    end    
-end
 
 function CorrectKeyNotification()
     OrionLib:MakeNotification({
@@ -90,7 +85,6 @@ Tab:AddButton({
 	Callback = function()
         if _G.KeyInput == _G.Key then
             CorrectKeyNotification()
-            task.wait(1)
             MakeScript()
         else
             InvalidKeyNotification()
@@ -98,6 +92,12 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "Copy Key Link!",
+	Callback = function()
+        setclipboard("https://discord.com/invite/RECcSvEXrW")
+  	end    
+})
 OrionLib:Init()
 
 
